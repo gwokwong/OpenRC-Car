@@ -1,14 +1,3 @@
----
-AIGC:
-    Label: "1"
-    ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: 4f152940444a68ea1ec4ce3748abc308_21c6c774a66611f199d2525400287e28
-    ReservedCode1: SKbbiR0ocZhm11BeHWNKMqZbOem1a0B/SiPTU9OuMgDn5/y6yr1rmb4uDTgcxu1j0NInpBJ1SztWTdvefYGyZcPBjHeheYIcTBTbmw2POIwLjl9o6uwRn5AGgViRSDMTGY/ysUdTHEqleyvj7+1EnHEkIEMcoh7ievDK12rqV6vkcjkpRNHCkN+sHwI=
-    ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: 4f152940444a68ea1ec4ce3748abc308_21c6c774a66611f199d2525400287e28
-    ReservedCode2: SKbbiR0ocZhm11BeHWNKMqZbOem1a0B/SiPTU9OuMgDn5/y6yr1rmb4uDTgcxu1j0NInpBJ1SztWTdvefYGyZcPBjHeheYIcTBTbmw2POIwLjl9o6uwRn5AGgViRSDMTGY/ysUdTHEqleyvj7+1EnHEkIEMcoh7ievDK12rqV6vkcjkpRNHCkN+sHwI=
----
-
 # OpenRC Car — 遥控小车项目
 
 基于 **uniapp（Vue3）+ Vue3 管理后台** 的遥控小车完整项目。仓库包含两个子项目：
@@ -28,7 +17,7 @@ D:\workspace\openrc-car
 │   ├── src/
 │   │   ├── components/
 │   │   │   └── rc-joystick/
-│   │   │       └── rc-joystick.vue # 摇杆组件（1:1 复刻 sf-farm-app joysticklibrary）
+│   │   │       └── rc-joystick.vue # 摇杆组件
 │   │   ├── pages/
 │   │   │   └── index/
 │   │   │       └── index.vue       # 遥控主页：摇杆控制 + 角度/推力/方向 + 指令 JSON 输出
@@ -74,7 +63,7 @@ D:\workspace\openrc-car
 
 **核心功能**
 
-- 摇杆遥控：`rc-joystick` 摇杆组件，1:1 复刻 `sf-farm-app` 的 `joysticklibrary`
+- 摇杆遥控：`rc-joystick` 摇杆组件
   - 8 方向 / 4 方向 / 左右 / 上下多模式切换
   - 角度与推力计算（`atan2` 角度约定、`power = 100 * dist / moveRadius`）
   - 触摸拖动、回中、锁定等交互

@@ -52,8 +52,14 @@ D:\workspace\openrc-car
     ├── package.json
     └── tsconfig.json
 ```
-
 ---
+
+## 效果预览
+
+![效果图](./images/pre1.png)
+
+
+
 
 ## 技术栈与核心功能
 
@@ -141,4 +147,3 @@ pnpm serve
   - 遥控车实时监控（位置、轨迹、视频回传）
   - 指令日志与历史回放
 - **多端发布**：App 端打包 Android/iOS，小程序端上架微信
-*（内容由AI生成，仅供参考）*

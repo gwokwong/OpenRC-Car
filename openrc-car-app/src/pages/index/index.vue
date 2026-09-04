@@ -3,7 +3,7 @@
     <!-- 标题区 -->
     <view class="header">
       <view class="header-title">OpenRC 遥控小车</view>
-      <view class="header-sub">摇杆控制 · 参考 sf-farm-app joysticklibrary</view>
+      <view class="header-sub">摇杆控制</view>
     </view>
 
     <!-- 控制状态 -->
@@ -30,7 +30,7 @@
     </view>
 
     <!-- 参数展示（参考车辆监控摇杆页参数卡风格） -->
-    <view class="panel">
+    <view class="panel" style="display: none;">
       <view class="panel-title">摇杆输出</view>
       <view class="param-grid">
         <view class="param-item">
@@ -61,13 +61,13 @@
     </view>
 
     <!-- 指令输出区 -->
-    <view class="panel">
+    <view class="panel" style="display: none;">
       <view class="panel-title">控制指令（JSON）</view>
       <view class="cmd-box">{{ commandJson }}</view>
     </view>
 
     <!-- 底部工具条 -->
-    <view class="toolbar">
+    <view class="toolbar" style="display: none;">
       <view class="tool-btn" :class="{ active: joyType === '8' }" @click="joyType = '8'">8轴</view>
       <view class="tool-btn" :class="{ active: joyType === '4' }" @click="joyType = '4'">4轴</view>
       <view class="tool-btn" :class="{ active: joyType === '2lr' }" @click="joyType = '2lr'">左右</view>
